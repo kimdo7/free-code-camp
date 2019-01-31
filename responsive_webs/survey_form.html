@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <style>
+        body {
+            background: #a9d7d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <h1 class="text-center" id="title">Survey Form</h1>
+            <div class="bg-white">
+                <p class="text-center pt-4 pb-4" id="description">
+                    Let us know how we can improve freeCodeCamp
+                </p>
+                <form id="survey-form">
+                    <div class="row form-group">
+                        <label class="col-6 text-right" id="name-label">*Name: </label>
+                        <input type="text" class="col-4 text-left form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="row form-group">
+                        <label class="col-6 text-right" id="email-label">*Email: </label>
+                        <input type="email" class="col-4 text-left form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="row form-group">
+                        <p class="col-6 text-right" id="number-label">*Age: </p>
+                        <input type="number" min="1" max="100" class="col-4 text-left form-control" id="number" placeholder="Age" required>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-1"></div>
+                        <label class="col-5 text-right">Which option best describes your current role?: </label>
+                        <select id="dropdown" class="col-4 text-left form-control">
+                            <option disabled value>Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-1"></div>
+                        < class="col-5 text-right">* How likely is that you would recommend freeCodeCamp to a friend?</>
+                        <ul class="col-4 text-left " required>
+                            <input type="radio" name="rating" value="1">Definitely<br>
+                            <input type="radio" name="rating" value="2">Maybe<br>
+                            <input type="radio" name="rating" value="3">Not sure<br>
+                        </ul>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-1"></div>
+                        <p class="col-5 text-right">Which option best describes your current role?: </p>
+                        <select id="dropdown" class="col-4 text-left form-control">
+                            <option disabled value>Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="community">Community</option>
+                            <option value="openSource">Open Source</option>
+                        </select>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-1"></div>
+                        <p class="col-5 text-right">Things that should be improved in the future
+                            (Check all that apply):</p>
+                        <ul class="col-4 text-left ">
+                            <input type="checkbox" name="prefer" value="1">Front-end Projects<br>
+                            <input type="checkbox" name="prefer" value="2">Back-end Projects<br>
+                            <input type="checkbox" name="prefer" value="3">Data Visualization<br>
+                            <input type="checkbox" name="prefer" value="4">Challenges<br>
+                            <input type="checkbox" name="prefer" value="5">Open Source Community<br>
+                            <input type="checkbox" name="prefer" value="6">Gitter help rooms<br>
+                            <input type="checkbox" name="prefer" value="7">Videos<br>
+                            <input type="checkbox" name="prefer" value="8">City Meetups<br>
+                            <input type="checkbox" name="prefer" value="9">Wiki<br>
+                            <input type="checkbox" name="prefer" value="10">Forum<br>
+                            <input type="checkbox" name="prefer" value="11">Additional Courses<br>
+                        </ul>
+                    </div>
+
+                    <div class="row form-group">
+                        <p class="col-6 text-right">Any Comments or Suggestions? </p>
+                        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+                    </div>
+
+                    <div class="row form-group text-center">
+                        <div class="col text-center">
+                            <button class="btn btn-primary text-center" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
